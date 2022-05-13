@@ -1,0 +1,75 @@
+backend = nodemon, express, nodejs, mysql ,cors, body-parser
+frontend = reactjs, react native
+
+npm i -g nodemon
+
+DATABASE 
+========
+
+1. Nyalakan XAMPP
+2. Masuk ke dalam PHPMyAdmin
+3. Buat database: movie_db
+4. Atur Privileges untuk membuat User 
+5. Buat user account baru
+6. Buat nama user dan password
+7. Masuk ke database lalu membuat tabel sesuai keperluan
+
+TABEL DATABASE
+
+1. user
+	nama tabel : user
+	query	   : 
+		- id INT NOT NULL AUTO_INCREMENT Primary Key
+		- username VARCHAR(255) NOT NULL
+		- email VARCHAR(255) NOT NULL
+		- password VARCHAR(255) NOT NULL
+		- name VARCHAR(255) 
+		- created_at TIMESTAMP
+		- updated_at TIMESTAMP
+	
+2. video/movie
+	nama tabel : movie
+	query	   :
+		- movie_id INT NOT NULL AUTO_INCREMENT Primary Key
+		- movie_title VARCHAR(255) NOT NULL
+   	      - movie_desc VARCHAR(255)
+		- movie_genre VARCHAR(255) 
+		- movie_publisher VARCHAR(255)
+		- movie_year VARCHAR(255)
+		- created_at TIMESTAMP
+		- updated_at TIMESTAMP
+
+install back-end :
+- nodemon
+- express
+- cors
+- body-parser
+- mysql
+
+cara buat backend :
+- buat folder
+- buka vscode
+- npm init -y
+- packge.json muncul
+- npm i express body-parser mysql cors
+
+user case:
+login/register
+menonton
+searching
+filter
+
+user journey
+pass: ---> upercase,uniqcase,lowercase
+email: ---> google, facebook, twitter
+register ----> username,name,email,pass
+login ----> email, pass
+
+daftar api
+
+
+endpoin dan metod: 
+/register = post
+/login = get
+/movie = get
+/movie:id = get by id
