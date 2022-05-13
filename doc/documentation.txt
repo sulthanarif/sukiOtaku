@@ -64,12 +64,14 @@ pass: ---> upercase,uniqcase,lowercase
 email: ---> google, facebook, twitter
 register ----> username,name,email,pass
 login ----> email, pass
+  
 
 daftar api
 
 
-endpoin dan metod: 
+endpoint dan metod: 
 /register = post
 /login = get
+/profile = get, update, delete
 /movie = get
 /movie:id = get by id
