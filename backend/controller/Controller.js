@@ -1,6 +1,7 @@
 class Controller {
-    static getAll(req, res) {   
+    static homePage(req, res) {   
         res.send('Hello World!');
     }
 }
+
 module.exports = {Controller};

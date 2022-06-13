@@ -1,0 +1,201 @@
+/* css reset */
+*,*::after,*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* global style */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:  Roboto, sans-serif;
+    width: 100%;
+    background-color: #16181E;
+    color: white;
+    
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500px;
+    padding-left: 10px;
+}
+.poster {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+ul { list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1.5em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+
+}
+
+
+a { text-decoration: none;
+    color: white;
+    
+}
+a h1 {
+    color: #00B9AE;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+a:hover{
+    color: #00B9AE;
+    border-bottom: 3px solid #00B9AE;
+    padding-bottom: 10px;
+    
+}
+main{
+    margin: 90px auto;
+    width: 95%;
+}
+section{
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+}
+.populer .wrapper {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* header */
+header {
+    display: inline-block;
+    position: fixed;
+    background: rgba(22, 24, 30, 0.94) ;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
+    
+}
+.logo {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    padding: 18px 17px 17px;
+    text-align: center;
+    height: 100%;
+    color: #00B9AE;
+    background: rgba(255,255,255,.05);
+}
+header h1{
+    float: left;
+}
+header h1 a:hover{
+    color: black;
+} 
+
+/* navigation */
+nav{
+    float: left;
+    font-family: 'Lato', sans-serif;
+
+}
+nav ul{ 
+    padding-top :9.5px;
+    padding-bottom: 9.5px;
+
+}
+nav li{
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+
+
+
+/* search */
+.headitems {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    width: 340px;
+}
+header .search {
+    float: left;
+    padding: 14px 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+header .headitems {
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    width: 340px;
+    padding: 18px 17px 17px;
+}
+header .headitems .search {
+    float: left;
+    padding: 14px 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+header .headitems .search form {
+    background: rgba(255,255,255,.1);
+    padding: 0;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+header .headitems .search form input[type=text] {
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+header .headitems .search form button[type=submit] {
+    color: #fff;
+    background: #00B9AE;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 12px 15px;
+    font-size: 14px
+}
+header .headitems .search form button[type=submit] :hover{
+    color: rgb(230, 230, 230);
+    background: #06877f;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 12px 15px;
+    font-size: 14px
+}
+
+/* populer */
+.populer .title-section{
+    width: 100%;
+    padding: 15px 10px;
+    line-height: 20px;
+}
+.populer .title-section h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-family: 'Lato', sans-serif;
+    border-left: red solid 3px;
+}

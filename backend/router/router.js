@@ -2,13 +2,19 @@
 'use strict'
 
 const express = require('express');
+// controller
 const {Controller} = require('../controller/Controller');
+const {MovieRouter} = require(`./MovieRouter`);
 const router = express.Router();    // create router
 
-// controller
+
+
 
 
 // endpoints
-router.get('/', Controller.getAll);
+router.get('/', Controller.homePage);
+
+// router use
+router.use('/movies', MovieRouter);
 
 module.exports = {router};

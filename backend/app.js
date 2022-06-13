@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 // initialization cors
 const cors = require('cors');
 const app = express();
-const {router} = require('./routes/router');
+const {router} = require('./router/Router');
 
 // initialization port
 const port = process.env.PORT || 3000;
@@ -17,7 +17,21 @@ const port = process.env.PORT || 3000;
 const corsOptions = {
     origin: `http://localhost:${port}`,
 };
-app.use(cors(corsOptions));
+
+app.use(
+    cors({
+      origin: '*',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+      preflightContinue: false,
+      optionsSuccessStatus: 204,
+    })
+  );
+
+// parse requests of content-type - application/json
+app.use(express.json());
+
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
 
 // routing
 app.use('/', router);
